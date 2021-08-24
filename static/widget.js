@@ -7,7 +7,7 @@
 
   // user-configurable options
   var options = window.EARTH_DAY_LIVE_OPTIONS || {}
-  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.earthdaylive2020.org'
+  var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.zaklima.cz'
   var websiteName = options.websiteName || null
   var partnerReferrer = options.partnerReferrer || null
   var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2019, 12, 1)       // January 1st, 2020 - arbitrary date in the past
