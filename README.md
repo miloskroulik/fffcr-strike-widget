@@ -19,10 +19,10 @@ This project was based on the [Digital Climate Strike widget](https://github.com
     1. Clone the repo with command `git clone https://github.com/fightforthefuture/earth-day-live-widget.git`.
     2. Inside the project's folder, run 'npm install && npm run build'. A folder named 'dist' will be generated.
     3. Copy the files index.html and widget.js from dist into your site's folder.
-    4. Configure the 'iframeHost' option, as described in the section about `EARTH_DAY_LIVE_OPTIONS`.
+    4. Configure the 'iframeHost' option, as described in the section about `ZAKLIMA_LIVE_OPTIONS`.
     5. Include the widget anywhere on your site with <script src="widget.js" async></script>
 
-You can change the user experience and do some customization via the `EARTH_DAY_LIVE_OPTIONS` [described below](#customization-options). Before adding the widget make sure you have also read the [section below](#important-note-regarding-google-analytics-tracking) about Google Analytics tracking.
+You can change the user experience and do some customization via the `ZAKLIMA_LIVE_OPTIONS` [described below](#customization-options). Before adding the widget make sure you have also read the [section below](#important-note-regarding-google-analytics-tracking) about Google Analytics tracking.
 
 If you have any problems or questions regarding the widget, please [submit an issue](https://github.com/fightforthefuture/earth-day-live-widget/issues).
 
@@ -50,11 +50,11 @@ The widget is compatible with Firefox, Chrome (desktop and mobile), Safari (desk
 
 ## Customization options
 
-If you define an object called `EARTH_DAY_LIVE_OPTIONS` before including the widget code, you can pass some properties in to customize the default behavior.
+If you define an object called `ZAKLIMA_LIVE_OPTIONS` before including the widget code, you can pass some properties in to customize the default behavior.
 
 ```html
 <script type="text/javascript">
-  var EARTH_DAY_LIVE_OPTIONS = {
+  var ZAKLIMA_LIVE_OPTIONS = {
     /**
      * Specify view cookie expiration. After initial view, widget will not be
      * displayed to a user again until after this cookie expires. Defaults to 
@@ -125,11 +125,11 @@ If you define an object called `EARTH_DAY_LIVE_OPTIONS` before including the wid
 ```
 ## Important note regarding Google Analytics tracking
 
-As you can see in the `EARTH_DAY_LIVE_OPTIONS` above, Google Analytics is configured by default to post events when the widget is shown and when any of the buttons are clicked. See [**index.js**](https://github.com/fightforthefuture/earth-day-live-widget/blob/master/src/index.js) for more details. The reasons for this are outlined in Issue [#76](https://github.com/fightforthefuture/digital-climate-strike/issues/76) of the Digital Climate Strike, where this issue first arose. If you would like to disable this please add the widget to your site with the following configuration: 
+As you can see in the `ZAKLIMA_LIVE_OPTIONS` above, Google Analytics is configured by default to post events when the widget is shown and when any of the buttons are clicked. See [**index.js**](https://github.com/fightforthefuture/earth-day-live-widget/blob/master/src/index.js) for more details. The reasons for this are outlined in Issue [#76](https://github.com/fightforthefuture/digital-climate-strike/issues/76) of the Digital Climate Strike, where this issue first arose. If you would like to disable this please add the widget to your site with the following configuration: 
 
 ```html
 <script type="text/javascript">
-  var EARTH_DAY_LIVE_OPTIONS = {
+  var ZAKLIMA_LIVE_OPTIONS = {
     disableGoogleAnalytics: true
   };
 </script>

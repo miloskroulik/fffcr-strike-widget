@@ -3,9 +3,9 @@ import './main.css'
 const MS_PER_DAY = 86400000
 const GOOGLE_ANALYTICS_DELAY_MS = 30
 
-const EARTH_DAY_LIVE_URLS = {
-  en: 'https://www.earthdaylive2020.org/?source=earthdaylivebanner',
-  es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
+const ZAKLIMA_LIVE_URLS = {
+  cs: 'https://zaklima.cz',
+  //es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
   // de: 'https://www.earthdaylive2020.org/de/?source=earthdaylivebanner',
   // fr: 'https://www.earthdaylive2020.org/fr/?source=earthdaylivebanner',
   // nl: 'https://www.earthdaylive2020.org/nl/?source=earthdaylivebanner',
@@ -27,31 +27,31 @@ const LOCALE_CODE_MAPPING = {
 }
 
 let isMaximizing = false
-let language = 'en'
+let language = 'cs'
 
 function maximize() {
   if (isMaximizing) return
   isMaximizing = true
   postMessage('maximize')
-  const stickyFooter = document.querySelector('.edl-footer')
+  const stickyFooter = document.querySelector('.zk-footer')
   stickyFooter.style.display = 'none'
 
-  const fullPage = document.querySelector('.edl-full-page')
+  const fullPage = document.querySelector('.zk-full-page')
   fullPage.style.display = 'flex'
 }
 
 function showCloseButtonOnFullPageWidget() {
-  const fullPageWidget = document.querySelector('.edl-full-page')
+  const fullPageWidget = document.querySelector('.zk-full-page')
   fullPageWidget.style.background = 'none'
   fullPageWidget.classList.add('show-close-button')
 
-  const fullPageCloseButton = document.querySelector('.edl-full-page__close')
+  const fullPageCloseButton = document.querySelector('.zk-full-page__close')
   fullPageCloseButton.style.display = 'flex'
 
-  const fullPageCloseButtonContent = document.querySelector('.edl-close')
-  fullPageCloseButtonContent.classList.add('edl-full-page-close')
+  const fullPageCloseButtonContent = document.querySelector('.zk-close')
+  fullPageCloseButtonContent.classList.add('zk-full-page-close')
 
-  const fullPageFooter = document.querySelector('.edl-full-page__footer')
+  const fullPageFooter = document.querySelector('.zk-full-page__footer')
   fullPageFooter.style.display = 'none'
 }
 
@@ -72,7 +72,7 @@ function parseQuery(queryString) {
 function postMessage(action, data) {
   data || (data = {})
   data.action = action
-  data.EARTH_DAY_LIVE = true
+  data.ZAKLIMA_LIVE = true
   window.parent.postMessage(data, '*')
 }
 
@@ -92,13 +92,13 @@ function handleJoinEDLButtonClick(event) {
 
   //adding delay to allow google analytics call to complete
   setTimeout(() => {
-    postMessage('buttonClicked', { linkUrl: EARTH_DAY_LIVE_URLS[language] })
+    postMessage('buttonClicked', { linkUrl: ZAKLIMA_LIVE_URLS[language] })
   }, GOOGLE_ANALYTICS_DELAY_MS)
 }
 
 function setEarthDayLiveLinkUrl(selector) {
   const element = document.querySelector(selector)
-  element.setAttribute('href', EARTH_DAY_LIVE_URLS[language])
+  element.setAttribute('href', ZAKLIMA_LIVE_URLS[language])
 }
 
 function attachEvent(selector, event, callback) {
@@ -121,10 +121,10 @@ function initGoogleAnalytics() {
 }
 
 function addTrackingEvents(hostname, forceFullPageWidget) {
-  attachEvent('.edl-footer .edl-link', 'click', () => trackEvent('footer-join-button', 'click', hostname))
-  attachEvent('.edl-footer .edl-close', 'click', () => trackEvent('footer-close-button', 'click', hostname))
-  attachEvent('.edl-full-page .edl-link', 'click', () => trackEvent('full-page-join-button', 'click', hostname))
-  attachEvent('.edl-full-page .edl-close', 'click', () => trackEvent('full-page-close-button', 'click', hostname))
+  attachEvent('.zk-footer .zk-link', 'click', () => trackEvent('footer-join-button', 'click', hostname))
+  attachEvent('.zk-footer .zk-close', 'click', () => trackEvent('footer-close-button', 'click', hostname))
+  attachEvent('.zk-full-page .zk-link', 'click', () => trackEvent('full-page-join-button', 'click', hostname))
+  attachEvent('.zk-full-page .zk-close', 'click', () => trackEvent('full-page-close-button', 'click', hostname))
 
   if (forceFullPageWidget) {
     trackEvent('full-page-widget', 'load', hostname)
@@ -166,8 +166,8 @@ function getFormattedDate(date, language) {
 function appendPartnerReferrerToUrls(partnerReferrer) {
   if (!partnerReferrer) return
 
-  for (let language in EARTH_DAY_LIVE_URLS) {
-    EARTH_DAY_LIVE_URLS[language] += '&referrer=' + partnerReferrer
+  for (let language in ZAKLIMA_LIVE_URLS) {
+    ZAKLIMA_LIVE_URLS[language] += '&referrer=' + partnerReferrer
   }
 }
 
@@ -179,17 +179,17 @@ function initializeInterface() {
 
   appendPartnerReferrerToUrls(query.partnerReferrer || null)
 
-  setEarthDayLiveLinkUrl('.edl-footer .edl-link__wrapper .edl-link')
-  setEarthDayLiveLinkUrl('.edl-footer .edl-link__wrapper .edl-link__icon')
-  setEarthDayLiveLinkUrl('.edl-footer__logo')
-  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__wrapper .edl-link')
-  setEarthDayLiveLinkUrl('.edl-full-page .edl-link__wrapper .edl-link__icon')
-  setEarthDayLiveLinkUrl('.edl-full-page__logo')
-  attachEvent('.edl-close', 'click', handleCloseButtonClick)
-  attachEvent('.edl-link', 'click', handleJoinEDLButtonClick)
-  attachEvent('.edl-link__icon', 'click', handleJoinEDLButtonClick)
-  attachEvent('.edl-footer__logo', 'click', handleJoinEDLButtonClick)
-  attachEvent('.edl-full-page__logo', 'click', handleJoinEDLButtonClick)
+  setEarthDayLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link')
+  setEarthDayLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link__icon')
+  setEarthDayLiveLinkUrl('.zk-footer__logo')
+  setEarthDayLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link')
+  setEarthDayLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link__icon')
+  setEarthDayLiveLinkUrl('.zk-full-page__logo')
+  attachEvent('.zk-close', 'click', handleCloseButtonClick)
+  attachEvent('.zk-link', 'click', handleJoinEDLButtonClick)
+  attachEvent('.zk-link__icon', 'click', handleJoinEDLButtonClick)
+  attachEvent('.zk-footer__logo', 'click', handleJoinEDLButtonClick)
+  attachEvent('.zk-full-page__logo', 'click', handleJoinEDLButtonClick)
 
   language = query.language ? query.language : language
 
@@ -198,8 +198,9 @@ function initializeInterface() {
   }
 
   if (isTruthy(query.googleAnalytics) && !navigator.doNotTrack) {
-    initGoogleAnalytics()
-    addTrackingEvents(query.hostname, query.forceFullPageWidget)
+    // Comment out
+    // initGoogleAnalytics()
+    // addTrackingEvents(query.hostname, query.forceFullPageWidget)
   }
 
   if (isFullPage) {
@@ -209,8 +210,8 @@ function initializeInterface() {
   // Set display dates on full-size widget
   var fullscreenDateString = getFormattedDate(fullPageDisplayStartDate, language)
   var nextDayDateString = getFormattedDate(fullPageDisplayStopDate, language)
-  document.getElementById('edl-strike-date').innerText = fullscreenDateString
-  document.getElementById('edl-tomorrow-date').innerText = nextDayDateString
+  document.getElementById('zk-strike-date').innerText = fullscreenDateString
+  document.getElementById('zk-tomorrow-date').innerText = nextDayDateString
 }
 
 document.addEventListener('DOMContentLoaded', initializeInterface)

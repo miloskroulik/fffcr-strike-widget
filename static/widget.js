@@ -1,12 +1,12 @@
 (function() {
   'use strict'
-  var DOM_ID = 'EARTH_DAY_LIVE'
-  var CLOSED_COOKIE = '_EARTH_DAY_LIVE_WIDGET_CLOSED_'
+  var DOM_ID = 'ZAKLIMA_LIVE'
+  var CLOSED_COOKIE = '_ZAKLIMA_LIVE_WIDGET_CLOSED_'
   var NOW = new Date().getTime()
   var MS_PER_DAY = 86400000
 
   // user-configurable options
-  var options = window.EARTH_DAY_LIVE_OPTIONS || {}
+  var options = window.ZAKLIMA_LIVE_OPTIONS || {}
   var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.zaklima.cz'
   var websiteName = options.websiteName || null
   var partnerReferrer = options.partnerReferrer || null
@@ -14,7 +14,7 @@
   var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 3, 22)  // April 22nd, 2020
   var forceFullPageWidget = !!options.forceFullPageWidget
   var cookieExpirationDays = parseFloat(options.cookieExpirationDays || 1)
-  var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_EARTH_DAY_LIVE') !== -1)
+  var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_ZAKLIMA_LIVE') !== -1)
   var disableGoogleAnalytics = !!options.disableGoogleAnalytics
   var showCloseButtonOnFullPageWidget = !!options.showCloseButtonOnFullPageWidget
   var language = getLanguage()
@@ -154,7 +154,7 @@
   }
 
   function receiveMessage(event) {
-    if (!event.data.EARTH_DAY_LIVE) return
+    if (!event.data.ZAKLIMA_LIVE) return
     if (event.origin.lastIndexOf(iframeHost, 0) !== 0) return
 
     switch (event.data.action) {
@@ -192,7 +192,7 @@
 
     var iFrameHeight = getIframeHeight()
 
-    injectCSS('EARTH_DAY_LIVE_CSS',
+    injectCSS('ZAKLIMA_LIVE_CSS',
       '#' + DOM_ID + ' { position: fixed; right: 0; left: 0; bottom: 0px; width: 100%; height: ' + iFrameHeight + '; z-index: 20000; -webkit-overflow-scrolling: touch; overflow: hidden; } ' +
       '#' + DOM_ID + ' iframe { width: 100%; height: 100%; }'
     )

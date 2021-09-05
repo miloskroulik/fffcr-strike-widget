@@ -1,6 +1,6 @@
 /* close.css */
 
-.edl-close {
+.zk-close {
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -44,7 +44,7 @@
   }
 }
 
-.edl-close.edl-full-page-close {
+.zk-close.zk-full-page-close {
   &::before,
   &::after {
     height: 2rem;

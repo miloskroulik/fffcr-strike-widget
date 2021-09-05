@@ -50,7 +50,7 @@ You can modify settings by editing `docker-compose.yml` file. The container need
 
 The widget can be localized, including the date format. Following changes are needed:
 
-- `src/index.js`: constants `LOCALE_CODE_MAPPING` and `EARTH_DAY_LIVE_URLS` (only if there's relevant language version of https://earthdaylive2020.org/ site) need to be adjusted. For language codes, please refer to https://gist.github.com/wpsmith/7604842
+- `src/index.js`: constants `LOCALE_CODE_MAPPING` and `ZAKLIMA_LIVE_URLS` (only if there's relevant language version of https://earthdaylive2020.org/ site) need to be adjusted. For language codes, please refer to https://gist.github.com/wpsmith/7604842
 - `webpack.common.js`: edit `plugins` array and add a new HtmlWebPackPlugin instance based on your language code
 - copy file `src/translations/en.yml` to `src/translations/<your-code>.yml` and translate it
 - `static/widget.js`: edit `getLanguage()` function to add default language resolution for your langcode
