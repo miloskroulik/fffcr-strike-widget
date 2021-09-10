@@ -15,15 +15,15 @@ const ZAKLIMA_LIVE_URLS = {
 }
 
 const LOCALE_CODE_MAPPING = {
-  en: 'en-EN',
-  de: 'de-DE',
-  es: 'es-ES',
+  // en: 'en-EN',
+  // de: 'de-DE',
+  // es: 'es-ES',
   cs: 'cs-CZ',
-  fr: 'fr-FR',
-  nl: 'nl-NL',
-  tr: 'tr-TR',
-  pt: 'pt-BR',
-  it: 'it-IT',
+  // fr: 'fr-FR',
+  // nl: 'nl-NL',
+  // tr: 'tr-TR',
+  // pt: 'pt-BR',
+  // it: 'it-IT',
 }
 
 let isMaximizing = false
