@@ -86,7 +86,7 @@ function handleCloseButtonClick(event) {
   }, GOOGLE_ANALYTICS_DELAY_MS)
 }
 
-function handleJoinEDLButtonClick(event) {
+function handleJoinStavkaButtonClick(event) {
   event.preventDefault()
   event.stopPropagation()
 
@@ -186,10 +186,10 @@ function initializeInterface() {
   setZaklimaLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link__icon')
   setZaklimaLiveLinkUrl('.zk-full-page__logo')
   attachEvent('.zk-close', 'click', handleCloseButtonClick)
-  attachEvent('.zk-link', 'click', handleJoinEDLButtonClick)
-  attachEvent('.zk-link__icon', 'click', handleJoinEDLButtonClick)
-  attachEvent('.zk-footer__logo', 'click', handleJoinEDLButtonClick)
-  attachEvent('.zk-full-page__logo', 'click', handleJoinEDLButtonClick)
+  attachEvent('.zk-link', 'click', handleJoinStavkaButtonClick)
+  attachEvent('.zk-link__icon', 'click', handleJoinStavkaButtonClick)
+  attachEvent('.zk-footer__logo', 'click', handleJoinStavkaButtonClick)
+  attachEvent('.zk-full-page__logo', 'click', handleJoinStavkaButtonClick)
 
   language = query.language ? query.language : language
 
