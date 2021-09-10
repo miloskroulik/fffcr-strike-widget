@@ -56,47 +56,47 @@
   }
 
   function getLanguage() {
-    var language = 'en'
+    var language = 'cs'
 
-    // Spanish is specified or no language is set and browser is set to spanish
-    if (options.language === 'es' || (!options.language && navigator && navigator.language.match(/^es/))) {
-      language = 'es'
-    }
-
-    // German is specified or no language is set and browser is set to German
-    if (options.language === 'de' || (!options.language && navigator && navigator.language.match(/^de/))) {
-      language = 'de'
-    }
-
-    // Czech is specified or no language is set and browser is set to German
-    if (options.language === 'cs' || (!options.language && navigator && navigator.language.match(/^cs/))) {
-      language = 'cs'
-    }
-
-    // French is specified or no language is set and browser is set to French
-    if (options.language === 'fr' || (!options.language && navigator && navigator.language.match(/^fr/))) {
-      language = 'fr'
-    }
-
-    // Dutch is specified or no language is set and browser is set to Dutch
-    if (options.language === 'nl' || (!options.language && navigator && navigator.language.match(/^nl/))) {
-      language = 'nl'
-    }
-
-    // Turkish is specified or no language is set and browser is set to Turkish
-    if (options.language === 'tr' || (!options.language && navigator && navigator.language.match(/^tr/))) {
-      language = 'tr'
-    }
-
-    // Portuguese is specified or no language is set and browser is set to Portuguese
-    if (options.language === 'pt' || (!options.language && navigator && navigator.language.match(/^pt/))) {
-      language = 'pt'
-    }
-
-    // Italian is specified or no language is set and browser is set to Italian
-    if (options.language === 'it' || (!options.language && navigator && navigator.language.match(/^it/))) {
-      language = 'it'
-    }
+    // // Spanish is specified or no language is set and browser is set to spanish
+    // if (options.language === 'es' || (!options.language && navigator && navigator.language.match(/^es/))) {
+    //   language = 'es'
+    // }
+    //
+    // // German is specified or no language is set and browser is set to German
+    // if (options.language === 'de' || (!options.language && navigator && navigator.language.match(/^de/))) {
+    //   language = 'de'
+    // }
+    //
+    // // Czech is specified or no language is set and browser is set to German
+    // if (options.language === 'cs' || (!options.language && navigator && navigator.language.match(/^cs/))) {
+    //   language = 'cs'
+    // }
+    //
+    // // French is specified or no language is set and browser is set to French
+    // if (options.language === 'fr' || (!options.language && navigator && navigator.language.match(/^fr/))) {
+    //   language = 'fr'
+    // }
+    //
+    // // Dutch is specified or no language is set and browser is set to Dutch
+    // if (options.language === 'nl' || (!options.language && navigator && navigator.language.match(/^nl/))) {
+    //   language = 'nl'
+    // }
+    //
+    // // Turkish is specified or no language is set and browser is set to Turkish
+    // if (options.language === 'tr' || (!options.language && navigator && navigator.language.match(/^tr/))) {
+    //   language = 'tr'
+    // }
+    //
+    // // Portuguese is specified or no language is set and browser is set to Portuguese
+    // if (options.language === 'pt' || (!options.language && navigator && navigator.language.match(/^pt/))) {
+    //   language = 'pt'
+    // }
+    //
+    // // Italian is specified or no language is set and browser is set to Italian
+    // if (options.language === 'it' || (!options.language && navigator && navigator.language.match(/^it/))) {
+    //   language = 'it'
+    // }
 
     return language
   }
