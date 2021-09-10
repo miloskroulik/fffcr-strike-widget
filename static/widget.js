@@ -10,8 +10,8 @@
   var iframeHost = options.iframeHost !== undefined ? options.iframeHost : 'https://widget.zaklima.cz'
   var websiteName = options.websiteName || null
   var partnerReferrer = options.partnerReferrer || null
-  var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2019, 12, 1)       // January 1st, 2020 - arbitrary date in the past
-  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2020, 3, 22)  // April 22nd, 2020
+  var footerDisplayStartDate = options.footerDisplayStartDate || new Date(2021, 8, 20)       // January 1st, 2020 - arbitrary date in the past
+  var fullPageDisplayStartDate = options.fullPageDisplayStartDate || new Date(2021, 8, 24)  // April 22nd, 2020
   var forceFullPageWidget = !!options.forceFullPageWidget
   var cookieExpirationDays = parseFloat(options.cookieExpirationDays || 1)
   var alwaysShowWidget = !!(options.alwaysShowWidget || window.location.hash.indexOf('ALWAYS_SHOW_ZAKLIMA_LIVE') !== -1)
