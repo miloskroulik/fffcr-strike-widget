@@ -1,17 +1,16 @@
 full_page:
   body: '
-      We&rsquo;re watching<br />
-      Earth Day Live<br />
-      today.<br />'
-  link_text: 'Will you?'
-  ready:  'I&rsquo;m ready ➔'
-  footer: 'You’ll be able to access this website tomorrow, <time id="zk-tomorrow-date" datetime="2020-04-23">April 23</time>.'
+      Dnes stávkujeme<br />
+      za klima<br />'
+  link_text: 'Přidáte se?'
+  ready:  'Jdu do toho ➔'
+  footer: 'Náš web bude opět přístupný zítra, <time id="zk-tomorrow-date" datetime="2021-09-25">25. září</time>.'
 footer:
-  body: 'Our website will join Earth Day Live on <time id="zk-strike-date" datetime="2020-04-22">April 22</time>. '
-  link_text: 'Will you?'
-  ready: 'Yes, I&rsquo;m in. ➔'
+  body: 'Náš web podpoří Stávku za klima <time id="zk-strike-date" datetime="2021-09-24">24. září</time>. '
+  link_text: 'Přidáte se?'
+  ready: 'Jdu do toho ➔'
 
-title: 'Earth Day Live'
-logo_alt: 'Earth Day Live logo'
-close_overlay: 'Close overlay'
-close_banner: 'Close banner'
+title: 'Stávka za klima'
+logo_alt: 'Logo stávky za klima'
+close_overlay: 'Zavřít překryv'
+close_banner: 'Zavřít banner'
