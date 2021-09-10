@@ -199,8 +199,8 @@ function initializeInterface() {
 
   if (isTruthy(query.googleAnalytics) && !navigator.doNotTrack) {
     // Comment out
-    // initGoogleAnalytics()
-    // addTrackingEvents(query.hostname, query.forceFullPageWidget)
+    initGoogleAnalytics()
+    addTrackingEvents(query.hostname, query.forceFullPageWidget)
   }
 
   if (isFullPage) {
