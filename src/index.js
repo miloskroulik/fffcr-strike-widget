@@ -96,7 +96,7 @@ function handleJoinEDLButtonClick(event) {
   }, GOOGLE_ANALYTICS_DELAY_MS)
 }
 
-function setEarthDayLiveLinkUrl(selector) {
+function setZaklimaLiveLinkUrl(selector) {
   const element = document.querySelector(selector)
   element.setAttribute('href', ZAKLIMA_LIVE_URLS[language])
 }
@@ -179,12 +179,12 @@ function initializeInterface() {
 
   appendPartnerReferrerToUrls(query.partnerReferrer || null)
 
-  setEarthDayLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link')
-  setEarthDayLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link__icon')
-  setEarthDayLiveLinkUrl('.zk-footer__logo')
-  setEarthDayLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link')
-  setEarthDayLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link__icon')
-  setEarthDayLiveLinkUrl('.zk-full-page__logo')
+  setZaklimaLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link')
+  setZaklimaLiveLinkUrl('.zk-footer .zk-link__wrapper .zk-link__icon')
+  setZaklimaLiveLinkUrl('.zk-footer__logo')
+  setZaklimaLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link')
+  setZaklimaLiveLinkUrl('.zk-full-page .zk-link__wrapper .zk-link__icon')
+  setZaklimaLiveLinkUrl('.zk-full-page__logo')
   attachEvent('.zk-close', 'click', handleCloseButtonClick)
   attachEvent('.zk-link', 'click', handleJoinEDLButtonClick)
   attachEvent('.zk-link__icon', 'click', handleJoinEDLButtonClick)
