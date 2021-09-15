@@ -1,13 +1,14 @@
 /* footer */
 
 .zk-footer {
-  background: url('images/earth-day-live-gradient.jpg') no-repeat center bottom;
+  /*background: url('images/earth-day-live-gradient.jpg') no-repeat center bottom;*/
+  background-color: #197441;
   background-size: cover;
   bottom: 0;
   box-shadow: 0 0 1.6rem rgba(0, 0, 0, 0.2);
-  font-family: titling-gothic-fb, sans-serif;
+  font-family: 'Futura Bold', sans-serif;
   left: 0;
-  padding: 1.25rem 1.25rem;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
   position: fixed;
   right: 0;
   width: 100%;
@@ -26,6 +27,8 @@
   flex-wrap: nowrap;
   margin: 0 auto;
   max-width: 50rem;
+  /*position: relative;*/
+  /*top: 15px;*/
 }
 
 .zk-footer__logo {
@@ -41,7 +44,7 @@
 
 .zk-footer__body {
   color: var(--white);
-  font: normal 1rem/1.2rem titling-gothic-fb, sans-serif;
+  font: normal 1rem/1.2rem 'Futura Bold', sans-serif;
   max-width: 26rem;
   text-align: center;
 }
