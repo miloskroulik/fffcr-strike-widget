@@ -2,7 +2,8 @@
 
 .zk-full-page {
   align-items: center;
-  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  //background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  background: url('images/erde_hell.svg') #13e758 no-repeat center center fixed;
   bottom: 0;
   color: var(--white);
   display: none;
@@ -17,7 +18,8 @@
 
 .zk-full-page.show-close-button::after {
   content: "";
-  background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  //background: url('images/earth-day-live-gradient.jpg') no-repeat center center fixed;
+  background: url('images/erde_hell.svg') #13e758 no-repeat center center fixed;
   opacity: 0.9;
   top: 0;
   left: 0;
@@ -55,7 +57,7 @@
 }
 
 .zk-full-page__body div {
-  font: normal 2.2rem/3rem titling-gothic-fb, sans-serif;
+  font: normal 2.2rem/3rem 'Futura Bold', sans-serif;
 }
 
 .zk-full-page__body .zk-link__wrapper {
@@ -100,6 +102,6 @@
 
 @media (max-height: 600px) {
   .zk-full-page__body div {
-    font: normal 2.2rem/2.5rem titling-gothic-fb, sans-serif;
+    font: normal 2.2rem/2.5rem 'Futura Bold', sans-serif;
   }
 }
