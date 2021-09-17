@@ -1,5 +1,8 @@
 # Digitální stávka za klima
 
+<!--ts-->
+<!--te-->
+
 ## Co je digitální stávka za klima
 
 Studenti z organizace Fridays for Future pořádají v pátek 24. září další stávku za klima. Jejím cílem je upozornit na
