@@ -1,4 +1,4 @@
-_# Digitální stávka za klima
+# Digitální stávka za klima
 
 ## Co je digitální stávka za klima
 
