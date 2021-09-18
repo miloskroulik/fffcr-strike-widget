@@ -65,6 +65,67 @@ Postupuj prosím podle [instrukcí na stránce pluginu](https://github.com/milos
 
 Modul pro Drupal bude dostupný nejpozději v neděli 19. září.
 
+## Konfigurace
+
+Chování widgetu můžeš upravit vytvořením objektu `ZAKLIMA_LIVE_OPTIONS` před připojením `widget.js`.
+
+```html
+<script type="text/javascript">
+  var ZAKLIMA_LIVE_OPTIONS = {
+    /**
+     * Specify view cookie expiration. After initial view, widget will not be
+     * displayed to a user again until after this cookie expires. Defaults to 
+     * one day.
+     */
+    cookieExpirationDays: 1, // @type {number}
+    
+    /**
+     * Allow you to override the iFrame hostname. Defaults to https://widget.earthdaylive2020.org
+     */
+    iframeHost: 'https://widget.zaklima.cz', // @type {string}
+
+    /**
+     * Prevents the widget iframe from loading Google Analytics. Defaults to
+     * false. (Google Analytics will also be disabled if doNotTrack is set on
+     * the user's browser.)
+     */
+    disableGoogleAnalytics: false, // @type {boolean}
+
+    /**
+     * Always show the widget, even when someone has closed the widget and set the cookie on their device. 
+     * Useful for testing. Defaults to false.
+     */
+    alwaysShowWidget: false, // @type {boolean}
+
+    /**
+     * Automatically makes the widget full page. Defaults to false.
+     */
+    forceFullPageWidget: false, // @type {boolean}
+    
+    /**
+    * For the full page widget, shows a close button "x" and hides the message about the site being 
+    * available tomorrow. Defaults to false.
+    */
+    showCloseButtonOnFullPageWidget: false, // @type {boolean}
+    
+    /**
+     * The date when the sticky footer widget should start showing on your web site.
+     * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
+     * Defaults to new Date(2020, 0, 1) (January 1st, 2020).
+     */
+    footerDisplayStartDate: new Date(), //@ type {Date object}
+    
+    /**
+     * The date when the full page widget should showing on your web site for 24 hours. 
+     * Note: the month is one integer less than the number of the month. E.g. 8 is September, not August.
+     * Defaults to new Date(2020, 3, 22) (April 22nd, 2020)
+     */
+    fullPageDisplayStartDate: new Date(2020, 3, 22), //@ type {Date object}
+  };
+</script>
+<script src="https://widget.zaklima.cz/widget.js" async></script>
+```
+
 ## Dotazy
 
 Pokud jsi narazil/a na nějaký problém, nebo se potřebuješ na něco zeptat, použij prosím příslušné nástroje Githubu:
