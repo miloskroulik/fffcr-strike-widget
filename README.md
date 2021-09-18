@@ -1,6 +1,18 @@
 # Digitální stávka za klima
 
 <!--ts-->
+* [Digitální stávka za klima](#digitální-stávka-za-klima)
+   * [Co je digitální stávka za klima](#co-je-digitální-stávka-za-klima)
+   * [Jak to bude vypadat?](#jak-to-bude-vypadat)
+   * [Jak se můžu zapojit?](#jak-se-můžu-zapojit)
+      * [Přidání JS kódu](#přidání-js-kódu)
+      * [Selfhosting widgetu](#selfhosting-widgetu)
+      * [Plugin pro Wordpress](#plugin-pro-wordpress)
+      * [Modul pro Drupal](#modul-pro-drupal)
+   * [Dotazy](#dotazy)
+
+<!-- Added by: runner, at: Fri Sep 17 20:59:47 UTC 2021 -->
+
 <!--te-->
 
 ## Co je digitální stávka za klima
