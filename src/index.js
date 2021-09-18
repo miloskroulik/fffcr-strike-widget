@@ -4,7 +4,7 @@ const MS_PER_DAY = 86400000
 const GOOGLE_ANALYTICS_DELAY_MS = 30
 
 const ZAKLIMA_LIVE_URLS = {
-  cs: 'https://zaklima.cz',
+  cs: 'https://www.facebook.com/events/1285506698571162',
   //es: 'https://www.earthdaylive2020.org/es/?source=earthdaylivebanner',
   // de: 'https://www.earthdaylive2020.org/de/?source=earthdaylivebanner',
   // fr: 'https://www.earthdaylive2020.org/fr/?source=earthdaylivebanner',
