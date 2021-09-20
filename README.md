@@ -64,7 +64,22 @@ Postupuj prosím podle [instrukcí na stránce pluginu](https://github.com/milos
 
 ### Modul pro Drupal
 
-Modul pro Drupal [je také k dispozici](https://www.drupal.org/project/digital_climate_strike_2021_cz). 
+Modul pro Drupal [je také k dispozici](https://www.drupal.org/project/digital_climate_strike_2021_cz).
+
+### Google Tag Manager (GTM)
+Pokud používáš GTM, můžeš widget stávky snadno přidat pomocí Custom HTML tagu, který může v zákaldní podobě vypadat takto:
+
+```html
+<script>
+var EARTH_DAY_LIVE_OPTIONS = {
+  alwaysShowWidget: true
+}
+var head = document.getElementsByTagName('head')[0]
+var js = document.createElement('script');
+js.src = 'https://widget.zaklima.cz/widget.js';
+head.appendChild(js);
+</script>
+```
 
 ## Konfigurace
 
