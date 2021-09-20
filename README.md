@@ -9,9 +9,10 @@
       * [Selfhosting widgetu](#selfhosting-widgetu)
       * [Plugin pro Wordpress](#plugin-pro-wordpress)
       * [Modul pro Drupal](#modul-pro-drupal)
+   * [Konfigurace](#konfigurace)
    * [Dotazy](#dotazy)
 
-<!-- Added by: runner, at: Fri Sep 17 20:59:47 UTC 2021 -->
+<!-- Added by: runner, at: Sat Sep 18 08:38:56 UTC 2021 -->
 
 <!--te-->
 
