@@ -12,7 +12,7 @@
    * [Konfigurace](#konfigurace)
    * [Dotazy](#dotazy)
 
-<!-- Added by: runner, at: Sat Sep 18 08:38:56 UTC 2021 -->
+<!-- Added by: runner, at: Mon Sep 20 06:10:18 UTC 2021 -->
 
 <!--te-->
 
