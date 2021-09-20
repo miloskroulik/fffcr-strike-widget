@@ -63,7 +63,7 @@ Postupuj prosím podle [instrukcí na stránce pluginu](https://github.com/milos
 
 ### Modul pro Drupal
 
-Modul pro Drupal bude dostupný nejpozději v neděli 19. září.
+Modul pro Drupal [je také k dispozici](https://www.drupal.org/project/digital_climate_strike_2021_cz). 
 
 ## Konfigurace
 
